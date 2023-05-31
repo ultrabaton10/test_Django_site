@@ -1,0 +1,82 @@
+html, body {
+	background: linear-gradient(to left, #A9A9A9, #D1D1D1, lightgray, white, white, lightgray, #D1D1D1, #A9A9A9);
+	font-family: sans-serif;
+	margin: 0;
+}
+
+header {
+    display: flex;
+    background-image: linear-gradient(#303030, #303030, #303030, #303030, #303030, #303030, #303030, #303030, #303030, #303030, #303030, #303030, #303030, #303030, #303030, #303030, #303030, #303030, #303030, #303030, #696969, #696969, white, 	#808080, #808080, #505050, #505050, #303030);
+    min-height: 10vh;
+    max-height: 12vh;
+    justify-content: space-around;
+    border-radius: 5px;
+    border-bottom: 1px solid black;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 100%;
+}
+
+nav div a {
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+    transition: 0.8s linear;
+}
+
+nav div a:hover {
+    text-decoration: none;
+    opacity: 0.75;
+    color: lightgray;
+    transition: 0.8s linear;
+}
+
+.container_for_title {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    font-size: -webkit-xxx-large;
+    border-bottom: 1px solid #DCDCDC;
+}
+
+#flex_justify_content_center {
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+}
+
+#become_the_it_specialist {
+    height: 30vh;
+    width: 50%;
+}
+
+h1::after {
+    display: flex;
+    align-items: center;
+    content: url('/static/app1/images/moai.png');
+    height: 105px;
+}
+
+.flex_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: larger;
+    border-right: 2px solid gray;
+    border-left: 2px solid gray;
+}
+

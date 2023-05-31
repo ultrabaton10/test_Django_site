@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'app1/css/style.css' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="app1/favicons/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="{% static 'app1/favicons/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="app1/favicons/favicon-16x16.png">
+    <link rel="manifest" href="{% static 'app1/favicons/site.webmanifest' %}">
+    <link rel="mask-icon" href="app1/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="theme-color" content="#ffffff">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div><a href="/">Main</a></div>
+            <div><a href="/about_site">About site</a></div>
+            <div><a href="/learning">Learning</a></div>
+            <div><a href="/community">Community</a></div>
+        </nav>
+    </header>
+    <main>
+        <div class="user">
+            <div class="user_icon"><a href="#"><img src="#">Log in</a></div>
+            <div class="user_profile"><a href="#"><img src="#"></a></div>
+        </div>
+        <div class="container_for_title">
+            <h1>Brain Up</h1>
+        </div>
+        <div>
+            <div class="become_the_it_specialist"><span class="light_font" id="flex_justify_content_center">become a sought-after IT specialist</span><span class="light_font" id="flex_justify_content_center">and work from anywhere</span><span class="light_font" id="flex_justify_content_center">in the world</span></div>
+        </div>
+        <div class="flex_container">
+            {% block main_header %}
+            {% endblock %}
+        </div>
+
+    </main>
+</body>
+</html>
+
